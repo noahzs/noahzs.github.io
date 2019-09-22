@@ -1,0 +1,84 @@
+#bannertext {
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: 100%;
+    opacity: 1;
+    padding: 0px 20px;
+    font-size: xlarge;
+}
+
+
+header {
+    position: fixed;
+    background-color: black;
+    min-width: 100%;
+    opacity: 0.9;
+    overflow: hidden;
+    padding: 2px 2px;
+
+
+}
+
+        
+
+.topnav a {
+    float:left;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 30;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    
+    
+}
+
+.topnav a:hover {
+    color: #959595;
+}
+
+.topnav a.active {
+    color: #959595;
+}
+
+#heading{
+    color: black;
+    font-family: sans-serif;
+    font-weight: 545;
+    padding: 5px 10px;
+}
+
+li{
+    font-family: sans-serif;
+    padding: 2px 5px;
+}
+
+#link:link{
+    font-family: sans-serif;
+    padding: 10px;
+}
+#link:visited{
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+#subheading{
+    color: black;
+    font-family: sans-serif;
+    font-weight: 245;
+    padding: 5px 10px;
+}
+
+p{
+    font-family: sans-serif;
+    padding: 5px 10px;
+}
+
+img{
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}

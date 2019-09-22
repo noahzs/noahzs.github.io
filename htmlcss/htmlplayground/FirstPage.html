@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>First Page</title>
+<link rel="stylesheet" href="FirstPageCSS.css">
+</head>
+<body>
+<header style="background-color:blue; color:white">
+<h1>Welcome to the first page!</h1>
+</header>
+    <nav>
+        <h3>Navigation</h3>
+        <ul>
+            <li id=home><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
+<section>
+<p>This is a paragraph.</p>
+<p>This <b>is</b> <i>some</i> <strong>formated</strong> text.</p>
+<p>This is a longer paragraph with a <br /> line break in it.</p>
+<p align="center">This is some text in the center of the page.</p>
+<p id=lineinfo>The line below takes up 50% of the width of the page.</p>
+<hr width='50%' />    
+<p>The line below takes up 25% of the right of the screen</p>
+<span id="more">This is more text to add in to do stuff to, as I feel that it is necesary.</span>
+<hr width="25%" align="right" />
+<h3 align="center">Here is a nice image that scales to the size of the window</h3>
+<img width='100%' src="image.png" />
+</section>
+<section>
+<h3>Time for lists!</h3>
+<ol>
+    <li>This</li>
+    <li>is</li>
+    <li>an</li>
+    <li>ordered</li>
+    <li>list</li>
+</ol>
+<br />
+<ul>
+    <li>This</li>
+    <li>is</li>
+    <li>an</li>
+    <li>unordered</li>
+    <li>list</li>
+</ul>
+</section>
+<br />
+<article>
+    <h1>This is an article</h1>
+    <p class="block">And this is what the article says. <span class="sect">Here is another sentance within it. </span>It doesn't say much at all apart from these few sentences. It really just serves as an example as to how articles look and work and ofcourse, how to make them.</p>
+    <aside><p>This is an aside within the article.</p></aside>
+    <p>This is a continuation of the article itself.</p>
+</article>  
+<br />
+<section>
+<h3>These are links</h3>
+    <a href="https://www.google.com">Click here to go to Google!</a>
+    <br />
+    <a href="https://www.google.com" target="_blank">Click here to go to Google in a new window or tab!</a>
+</section>
+<section>
+<h3>Tables</h3>
+<table border="1" id="cities">
+    <caption>A Variety of Cities</caption>
+    <tr>
+        <th>Australian cities</th>
+        <td>Sydney</td>
+        <td>Melbourne</td>
+        <td>Perth</td>
+        <td>Adelaide</td>
+    </tr>
+    <tr>
+        <th>American Cities</th>
+        <td>New York</td>
+        <td>Washington</td>
+        <td>Denver</td>
+        <td>San Francisco</td>
+    </tr>
+</table>
+<h4>Let's add some colour.</h4>
+<table width='50%'>
+    <tr>
+    <td bgcolor="red">Red</td>
+    <td bgcolor="Yellow">Yellow</td>
+    </tr>
+    <tr>
+    <td bgcolor="blue">Blue</td>
+    <td bgcolor="green">Green</td>
+    </tr>
+</table>
+</section>
+    <br />
+<h3>Forms</h3>
+    <form>
+    <label>Username: </label>
+    <input type ="text" name="username" />
+    <br />
+    <label>Password: </label>
+    <input type="password" name="password" />
+    <br />
+    <h5>Gender</h5>
+    <input type="radio" name="gender" value="male"/> Male<br />
+    <input type="radio" name="gender" value="female" /> Female <br />
+    <h5>Interests</h5>
+    <input type="checkbox" name="Sports" value="1" /> Sports <br />
+    <input type="checkbox" name="Art" value="2" /> Art <br />
+    <input type="checkbox" name="Politics" value="3" /> Politics <br />
+    <input type="checkbox" name="Science" value="4" /> Science <br />
+    <br />
+    <input type="submit" value="Submit" />
+        
+    </form>
+    
+    <section>
+    <h3>Audio</h3>
+    <audio src="cloud.mp3" controls>Audio element not supported by your browser</audio>
+    </section>
+    <section>
+    <h3>Video</h3>
+    <video src="movie.mp4" controls>Video not supported by your browser</video>
+    </section>
+    <section>
+    <h3>Progress Bar</h3>
+    Status: <progress min="0" max="100" value="35"></progress>
+    </section>
+
+    <h3>Some JavaScript</h3>
+    <script>navigator.geolocation.getCurrentPosition();</script>
+  
+  
+    <h3>SVG</h3>
+    <svg width="600" height="600">
+        <circle cx="80" cy="270" r="50" fill="red" />
+        <rect width = "50" height="30" x="90" y="20" fill="blue" />
+        <line x1="30" y1="30" x2="300" y2="300" style ="stroke:#259556;stroke-linecap:round;stroke-width:20" />
+        <ellipse cx="200" cy="100" rx="150" ry="30" style="fill:yellow" />
+        <polygon points="150 150, 210 460, 500 450" style ="fill: orange; stroke:black;" />
+    </svg>
+    <h3>SVG Animations</h3>
+    <svg width="500" height="500">
+        <rect width="100" height="100" fill="purple">
+            <animate attributeName="x" from="0" to="300" 
+                 dur="3s" fill="freeze" repeatCount="3" begin="click" />
+            <animate attributeName="y" from="0" to="100" 
+                 dur="3s" fill="freeze" repeatCount="2" begin="click" />
+        </rect>
+    </svg>
+    <h3>Paths</h3>
+    <svg width="500" height="500">
+    <path d="M 0 0 L200 200 L200 0 Z"
+          style="stroke:#935; fill:none;" /></svg>
+    <h3>Canvas</h3>
+    <canvas id="canvas1"
+            width="400" height="300"></canvas>
+    
+    <script>
+    var can = 
+        document.getElementById("canvas1");
+        var ctx = can.getContext("2d");
+        ctx.fillStyle = "rgba(0, 200, 0,1)";
+        ctx.fillRect(36,10,22,22);
+        ctx.font="bold 22px Tahoma";
+        ctx.textAlign="start";
+        ctx.fillText("start", 10, 30);
+        ctx.translate(100, 150);
+        ctx.fillText("translated", 10, 30);
+    </script>
+    
+    <h3>HTML5 Forms</h3>
+    <form>
+        <label for="email">Your e-mail address:</label>
+        <input type="text" name="email" placeholder="email@example.com" /> 
+        <br />
+        <label for="phonenumber">Your phone number:</label>
+        <input id="tel" type="tel" name="phonenumber" autofocus/>
+        <br />
+        <label for="code">Your verification code:</label>
+        <input type ="text" name="code" required />
+        <input type="submit" value="Submit" />
+        <br />
+        <label for="hue">Pick your colour:</label>
+        <input type = "color" name ="hue" />
+        <br />
+        <label for="state">State:</label>
+        <input id="state" type="text" list="states" />
+        <datalist id="states">
+            <option value="NSW"></option>
+            <option value="ACT"></option>
+            <option value="NT"></option>
+            <option value="WA"></option>
+            <option value="VIC"></option>
+        </datalist>
+    </form>
+    
+    <h3>Search</h3>
+    <label for="mysearch">Search:</label>
+    <input id="mysearch" name="searchitem" type="search" placeholder="Search..." />
+
+    <h3> Adding in some more text</h3>
+    <p class="end">This is some more text to <em>do some </em>messing around with in my CSS</p>
+    
+    <footer>
+        <h4>This is a footer</h4>
+        <p>There are no terms of service.</p>
+    </footer>
+    
+    
+    
+</body>    
+    
+</html>
